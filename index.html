@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Face API</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: darkslategray;
-        }
-        canvas {
-            position: absolute;
-        }
-    </style>
-</head>
-<body>
-    <video id="video" autoplay></video>
-
+  </head>
+  <body>
+    <div class="heading">
+      <img src="img/logoCN-removebg-preview.png" alt="" class="logoCN" />
+      <div class="heading-text">
+        <h1 class="title">PPLG</h1>
+        <h2 class="sub-title">Face Recognition</h2>
+      </div>
+      <img
+        src="img/Picsart_24-05-13_13-19-46-920.png"
+        alt=""
+        class="logoPPLG"
+      />
+    </div>
+    <div class="video-container">
+      <div class="star-1"></div>
+      <div class="curtain1"></div>
+      <video id="video" autoplay muted></video>
+      <div class="curtain2"></div>
+      <div class="star-2"></div>
+    </div>
     <script src="face-api.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
